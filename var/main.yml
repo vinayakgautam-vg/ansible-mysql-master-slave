@@ -1,0 +1,7 @@
+mysql_replication_master: '54.224.107.123'
+
+mysql_replication_user:
+    name: replication
+    host: "%"
+    password: default@345
+

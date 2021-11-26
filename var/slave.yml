@@ -1,0 +1,3 @@
+# Replication settings
+mysql_server_id: "2"
+mysql_replication_role: 'slave'

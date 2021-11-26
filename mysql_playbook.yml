@@ -1,0 +1,17 @@
+---
+- hosts: db-master-01
+  vars_files:
+     - ./var/main.yml
+     - ./var/master.yml
+  roles:
+    - role: ./mysql
+      become: yes
+
+- hosts: db-slave-01
+  remote_user: root
+  vars_files:
+    - ./var/main.yml
+    - ./var/slave.yml
+  roles:
+    - role: ./roles
+      become: yes
